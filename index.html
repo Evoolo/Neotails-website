@@ -1,0 +1,931 @@
+---
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+
+layout: default
+---
+
+<section class="hero h-1/2">
+    <div class="grid max-w-screen-xl  px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12 min-h-3/4">
+        <div class="mr-auto place-self-center lg:col-span-7 ">
+            <h1
+                class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl text-white">
+                Bei uns werden Träume lebendig </h1>
+            <p class="max-w-2xl mb-6 font-light text-midnight-800 lg:mb-8 md:text-lg lg:text-xl xl:text-2xl text-white">
+                Willkommen bei Neotales, der Ort für individuelle Geschichten und Bücher, in denen deine Kinder die
+                Helden sind</p>
+            <a href="#"
+                class="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-ucla_blue hover:bg-ucla_blue-600 focus:ring-4 focus:ring-ucla_blue-400 hover:opacity-90">
+                Erstelle deine Geschichte
+                <svg class="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                        clip-rule="evenodd"></path>
+                </svg>
+            </a>
+            <a href="#"
+                class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-white bg-midnight border border-white rounded-lg hover:bg-white hover:text-midnight focus:ring-4 focus:ring-white focus:ring-white hover:opacity-90">
+                Beispiele
+            </a>
+        </div>
+        <div class="min-h-3/4 lg:mt-0 lg:col-span-5 lg:flex">
+            <img class="animate-float" src="/assets/images/svg/hero.svg" alt="mockup">
+        </div>
+    </div>
+    <img class="w-screen" src="/assets/images/svg/waves-1.svg">
+</section>
+
+<!-- Intro -->
+<section class="dark:bg-gray-900">
+    <div class="gap-8 py-4 lg:py-8 px-4 mx-auto max-w-screen-xl flex flex-col-reverse lg:flex-row  items-center">
+        <div class="lg:w-1/2 pr-8 p-4">
+            <canvas id="canvas" width="500" height="500" style="border-radius:30px;"></canvas>
+        </div>
+
+        <div class="w-full lg:w-1/2 mt-4 md:mt-0 p-8">
+            <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-white dark:text-white">AI-generierte Geschichten
+                für kleine Helden</h2>
+            <p class="mb-6 font-light text-white md:text-lg dark:text-gray-400">Tauche mit Neotales in die faszinierende
+                Welt der KI-generierten Kinderbücher und Gutenachtgeschichten ein. Deine Kinder können die Helden ihrer
+                eigenen Geschichten sein und in aufregende Abenteuer eintauchen.</p>
+
+            <div class="flex flex-col lg:flex-row text-white  lg:items-start mb-8">
+                <div class="inline-flex justify-center  text-purple-500 mb-5 ml-5">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 16 16">
+                        <path fill="white"
+                            d="M2 15.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v13.5zM8 4.41c1.387-1.425 4.854 1.07 0 4.277C3.146 5.48 6.613 2.986 8 4.412z" />
+                    </svg>
+                </div>
+                <div class="flex-grow ml-4">
+                    <h2 class="text-gray-900 text-lg title-font font-medium mb-3">Individuelle Bücher</h2>
+                    <p class="leading-relaxed text-base">Wenn du deine Geschichte gerne verschenken möchtest oder als
+                        besondere Erinnerung zu Hause ins Regal stellen willst, bekommst du dein Druck-Exemplar bequem
+                        nach Hause gesendet</p>
+                    <a href="#"
+                        class="inline-flex items-center justify-center px-5 py-2 mt-4 text-base font-medium text-center text-white rounded-lg bg-ucla_blue hover:bg-ucla_blue-600 focus:ring-4 focus:ring-ucla_blue-400 hover:opacity-90">
+                        Starte ab 25.99€
+                        <svg class="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="flex flex-row text-white  lg:items-start mb-8">
+                <div class="inline-flex justify-center  text-purple-500 mb-5 ml-5">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 16 16">
+                        <g fill="white">
+                            <path
+                                d="M12.5 3a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1h5zm0 3a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1h5zm.5 3.5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h5a.5.5 0 0 0 .5-.5zm-.5 2.5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1h5z" />
+                            <path
+                                d="M16 2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2zM4 1v14H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h2zm1 0h9a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5V1z" />
+                        </g>
+                    </svg>
+                </div>
+                <div class="flex-grow ml-4">
+                    <h2 class="text-gray-900 text-lg title-font font-medium mb-3">Gutenacht Abo</h2>
+                    <p class="leading-relaxed text-base">Erhalte jeden Abend eine individuelle Kurzgeschichte, in der
+                        deine Kinder die Hauptrollen spielen. Entführe sie in atemberaubende Welten und erlebe magische
+                        Momente vor dem Schlafengehen.</p>
+                    <a href="#"
+                        class="inline-flex items-center justify-center px-5 py-2 mt-4 text-base font-medium text-center text-white rounded-lg bg-ucla_blue hover:bg-ucla_blue-600 focus:ring-4 focus:ring-ucla_blue-400 hover:opacity-90">
+                        7 Tage kostenlos testen
+                        <svg class="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+    </div>
+    <img class="w-screen" src="/assets/images/svg/waves-3.svg">
+</section>
+<!-- Examples -->
+
+<section class="bg-ucla_blue text-black ">
+    <div class="gap-8 py-4 px-4 mx-auto max-w-screen-xl flex items-center">
+        <div class="container px-5 py-4 mx-auto">
+            <div class="flex flex-col text-center w-full mb-20">
+                <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-white">Entdecke Neotales in Aktion</h2>
+                <p class="lg:w-2/3 mx-auto leading-relaxed text-base md:text-lg text-white">Beispiele personalisierter
+                    Geschichten und Illustrationen</p>
+            </div>
+            <div class="flex flex-wrap -m-4 text-black">
+                <div class="lg:w-1/3 sm:w-1/2 h-64 p-4">
+                    <div class="flex relative">
+                        <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center"
+                            src="/assets/images/png/cover_amelie.png">
+                        <div
+                            class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+                            <h2 class="tracking-widest text-sm title-font font-medium text-blue-500 mb-1">THE SUBTITLE
+                            </h2>
+                            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Shooting Stars</h1>
+                            <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing
+                                microdosing tousled waistcoat.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-1/3 sm:w-1/2 p-4">
+                    <div class="flex relative">
+                        <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center"
+                            src="/assets/images/jpg/cover.jpg">
+                        <div
+                            class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+                            <h2 class="tracking-widest text-sm title-font font-medium text-blue-500 mb-1">THE SUBTITLE
+                            </h2>
+                            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">The Catalyzer</h1>
+                            <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing
+                                microdosing tousled waistcoat.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-1/3 sm:w-1/2 p-4">
+                    <div class="flex relative">
+                        <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center"
+                            src="https://dummyimage.com/603x363">
+                        <div
+                            class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+                            <h2 class="tracking-widest text-sm title-font font-medium text-blue-500 mb-1">THE SUBTITLE
+                            </h2>
+                            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">The 400 Blows</h1>
+                            <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing
+                                microdosing tousled waistcoat.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-1/3 sm:w-1/2 p-4">
+                    <div class="flex relative">
+                        <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center"
+                            src="https://dummyimage.com/602x362">
+                        <div
+                            class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+                            <h2 class="tracking-widest text-sm title-font font-medium text-blue-500 mb-1">THE SUBTITLE
+                            </h2>
+                            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Neptune</h1>
+                            <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing
+                                microdosing tousled waistcoat.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-1/3 sm:w-1/2 p-4">
+                    <div class="flex relative">
+                        <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center"
+                            src="https://dummyimage.com/605x365">
+                        <div
+                            class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+                            <h2 class="tracking-widest text-sm title-font font-medium text-blue-500 mb-1">THE SUBTITLE
+                            </h2>
+                            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Holden Caulfield</h1>
+                            <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing
+                                microdosing tousled waistcoat.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-1/3 sm:w-1/2 p-4">
+                    <div class="flex relative">
+                        <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center"
+                            src="https://dummyimage.com/606x366">
+                        <div
+                            class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+                            <h2 class="tracking-widest text-sm title-font font-medium text-blue-500 mb-1">THE SUBTITLE
+                            </h2>
+                            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Alper Kamu</h1>
+                            <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing
+                                microdosing tousled waistcoat.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+    </div>
+    <div class="gap-8 py-4 px-4 mx-auto max-w-screen-xl flex items-center">
+        <div class="py-4 sm:py-6 lg:py-12 w-full">
+            <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
+              <div class="flex flex-col bg-midnight items-center justify-between gap-4 rounded-lg bg-gray-100 p-4 sm:flex-row md:p-8">
+                <div>
+                  <h2 class="text-xl font-bold text-white md:text-2xl">Start deine kostenlose Testphase</h2>
+                  <p class="text-white-800">Keine Kreditkarte notwendig</p>
+                </div>
+          
+                <a href="#" class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-white bg-midnight border border-white rounded-lg hover:bg-white hover:text-midnight focus:ring-4 focus:ring-white focus:ring-white hover:opacity-90">Starte jetzt</a>
+              </div>
+            </div>
+          </div>
+    </div>
+    
+    
+    <img class="w-screen" src="/assets/images/svg/waves-4.svg">
+</section>
+
+<section class=" text-white">
+    <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
+        <div class="max-w-screen-md mb-8 lg:mb-16 mx-auto text-center">
+            <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Neotales Features im
+                Blick</h2>
+            <p class="lg:w-2/3 mx-auto leading-relaxed text-base md:text-lg text-white">Erfahren Sie, was NeoTales so
+                einzigartig macht</p>
+        </div>
+        <div class="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0  text-center">
+            <div>
+                <div
+                    class="flex justify-center items-center mb-4 w-32 h-32 rounded-full bg-primary-100 lg:h-48 lg:w-48 dark:bg-primary-900 mx-auto">
+                    <img src="/assets/images/jpg/astronaut_reading.jpg"
+                        class="shadow rounded-full max-w-full h-auto align-middle border-none mx-auto">
+                </div>
+                <h3 class="mb-2 text-xl font-bold dark:text-white">Perfektes Leseerlebnis</h3>
+                <p class="text-midnight-800 dark:text-gray-400">Unsere Geschichten sind einfach zu lesen und fördern das
+                    Lesenlernen. Gleichzeitig verpacken wir lehrreiche Elemente auf unterhaltsame Weise, damit jedes
+                    Buch zu einem Abenteuer der Bildung wird.
+                </p>
+            </div>
+            <div>
+                <div
+                    class="flex justify-center items-center mb-4 w-32 h-32 rounded-full bg-primary-100 lg:h-48 lg:w-48 dark:bg-primary-900 mx-auto">
+                    <img src="/assets/images/jpg/astronaut_painting.jpg"
+                        class="shadow rounded-full max-w-full h-auto align-middle border-none mx-auto">
+                </div>
+                <h3 class="mb-2 text-xl font-bold dark:text-white">Wundervolle Illustrationen</h3>
+                <p class="text-midnight-800 dark:text-gray-400">Unsere Geschichten werden mithilfe von KI optisch an die
+                    Eigenschaften deiner Kinder angepasst. Jedes Buch ist ein visuelles Meisterwerk, das die Fantasie
+                    deiner Kleinen zum Leben erweckt.</p>
+            </div>
+            <div>
+                <div
+                    class="flex justify-center items-center mb-4 w-32 h-32 rounded-full bg-primary-100 lg:h-48 lg:w-48 dark:bg-primary-900 mx-auto">
+                    <img src="/assets/images/jpg/astronaut_laptop.jpg"
+                        class="shadow rounded-full max-w-full h-auto align-middle border-none mx-auto">
+                </div>
+                <h3 class="mb-2 text-xl font-bold dark:text-white">Leicht anpassbar</h3>
+                <p class="text-midnight-800 dark:text-gray-400">Du kannst die Geschichten von NeoTales komplett
+                    überarbeiten. Editiere Texte nach deinen Wünschen und lasse sogar neue Bilder erstellen – für ein
+                    personalisiertes Leseerlebnis.
+                </p>
+            </div>
+            <div>
+                <div
+                    class="flex justify-center items-center mb-4 w-32 h-32 rounded-full bg-primary-100 lg:h-48 lg:w-48 dark:bg-primary-900 mx-auto">
+                    <img src="/assets/images/jpg/astronaut_playing.jpg"
+                        class="shadow rounded-full max-w-full h-auto align-middle border-none mx-auto">
+                </div>
+                <h3 class="mb-2 text-xl font-bold dark:text-white">Altersgerecht und lehrreich</h3>
+                <p class="text-midnight-800 dark:text-gray-400">Wir berücksichtigen das Alter deines Kindes und sorgen
+                    dafür, dass die Geschichten perfekt zu ihren Interessen passen. Unsere Bücher unterstützen nicht nur
+                    das Lesenlernen, sondern verpacken auch lehrreiche Elemente in spannende Abenteuer.</p>
+            </div>
+            <div>
+                <div
+                    class="flex justify-center items-center mb-4 w-32 h-32 rounded-full bg-primary-100 lg:h-48 lg:w-48 dark:bg-primary-900 mx-auto">
+                    <img src="/assets/images/jpg/astronaut_music.jpg"
+                        class="shadow rounded-full max-w-full h-auto align-middle border-none mx-auto">
+                </div>
+                <h3 class="mb-2 text-xl font-bold dark:text-white">Vorlesen leicht gemacht</h3>
+                <p class="text-midnight-800 dark:text-gray-400">In hektischen Zeiten bleibt die Gute-Nacht-Geschichte
+                    erhalten. Buche einfach die Audiospur dazu, und schon können die Kinder die Geschichten auch hören,
+                    wenn du mal zu viel um die Ohren hast.
+                </p>
+            </div>
+            <div>
+                <div
+                    class="flex justify-center items-center mb-4 w-32 h-32 rounded-full bg-primary-100 lg:h-48 lg:w-48 dark:bg-primary-900 mx-auto">
+                    <img src="/assets/images/jpg/astronaut_sport.jpg"
+                        class="shadow rounded-full max-w-full h-auto align-middle border-none mx-auto">
+                </div>
+                <h3 class="mb-2 text-xl font-bold dark:text-white">Individuelle Interessen</h3>
+                <p class="text-midnight-800 dark:text-gray-400">Neotales hebt sich ab, indem wir die Interessen deiner
+                    Kinder berücksichtigen. Schließe ungewünschte Themen aus und betone die Dinge, die dein Kind
+                    besonders faszinierend findet.
+                </p>
+            </div>
+        </div>
+    </div>
+    <img class="w-screen" src="/assets/images/svg/waves-3.svg">
+</section>
+
+
+<section class="bg-ucla_blue text-white body-font">
+    <div class="max-w-screen-md mb-8 lg:mb-16 mx-auto text-center">
+        <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Gutenacht Abo</h2>
+        <p class="lg:w-2/3 mx-auto leading-relaxed text-base md:text-lg text-white">Erhalte jeden Tag eine individuelle
+            Gute Nacht Geschichte auf dein Smartphone oder Tablet</p>
+    </div>
+    <div class="container px-5 py-24 mx-auto flex flex-wrap">
+        <div class="flex flex-wrap w-full">
+            <div class="lg:w-2/5 md:w-1/2 md:pr-10 md:py-6">
+                <div class="flex relative pb-12">
+                    <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
+                        <div class="h-full w-1 bg-white pointer-events-none"></div>
+                    </div>
+                    <div
+                        class="flex-shrink-0 w-10 h-10 rounded-full bg-charcoal-500 inline-flex items-center justify-center text-white relative z-10">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                        </svg>
+                    </div>
+                    <div class="flex-grow pl-4">
+                        <h2 class="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">Registrierung</h2>
+                        <p class="leading-relaxed">Erstelle deinen persönlichen Account</p>
+                    </div>
+                </div>
+                <div class="flex relative pb-12">
+                    <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
+                        <div class="h-full w-1 bg-white pointer-events-none"></div>
+                    </div>
+                    <div
+                        class="flex-shrink-0 w-10 h-10 rounded-full bg-charcoal-500 inline-flex items-center justify-center text-white relative z-10">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                            <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                        </svg>
+                    </div>
+                    <div class="flex-grow pl-4">
+                        <h2 class="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">Abo</h2>
+                        <p class="leading-relaxed">Buche deine kostenlose Testphase</p>
+                    </div>
+                </div>
+                <div class="flex relative pb-12">
+                    <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
+                        <div class="h-full w-1 bg-white pointer-events-none"></div>
+                    </div>
+                    <div
+                        class="flex-shrink-0 w-10 h-10 rounded-full bg-charcoal-500 inline-flex items-center justify-center text-white relative z-10">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                            <circle cx="12" cy="5" r="3"></circle>
+                            <path d="M12 22V8M5 12H2a10 10 0 0020 0h-3"></path>
+                        </svg>
+                    </div>
+                    <div class="flex-grow pl-4">
+                        <h2 class="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">Personalisierung
+                        </h2>
+                        <p class="leading-relaxed">Hinterlege Merkmale, Alter und Interessen deiner Kinder</p>
+                    </div>
+                </div>
+                <div class="flex relative pb-12">
+                    <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
+                        <div class="h-full w-1 bg-white pointer-events-none"></div>
+                    </div>
+                    <div
+                        class="flex-shrink-0 w-10 h-10 rounded-full bg-charcoal-500 inline-flex items-center justify-center text-white relative z-10">
+                        <svg fill="none" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            class="w-5 h-5" viewBox="0 0 24 24">
+                            <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+                            <circle cx="12" cy="7" r="4"></circle>
+                        </svg>
+                    </div>
+                    <div class="flex-grow pl-4">
+                        <h2 class="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">Sendemethode</h2>
+                        <p class="leading-relaxed">Sag uns, wo hin wir deine Geschichte senden sollen. Du hast die Wahl
+                            zwischen Email, SMS und Telegram. Du kannst dir einen Link zum interaktiven Buch (Perfekt
+                            fürs Tablet) oder als PDF zum ausdrucken zuschicken lassen</p>
+                    </div>
+                </div>
+                <div class="flex relative">
+                    <div
+                        class="flex-shrink-0 w-10 h-10 rounded-full bg-charcoal-500 inline-flex items-center justify-center text-white relative z-10">
+                        <svg fill="none" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            class="w-5 h-5" viewBox="0 0 24 24">
+                            <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                            <path d="M22 4L12 14.01l-3-3"></path>
+                        </svg>
+                    </div>
+                    <div class="flex-grow pl-4">
+                        <h2 class="font-medium title-font text-sm text-charcoal-900 mb-1 tracking-wider">Der Lesespass
+                            beginnt</h2>
+                        <p class="leading-relaxed">Du erhältst pünklich zur Schlafenszeit deine persönlich Gutenacht
+                            Geschichte</p>
+                    </div>
+                    
+                </div>
+                <a href="#" class="mt-6 w-full inline-flex items-center justify-center px-5 py-3 text-base font-medium text-white bg-ucla_blue border border-white rounded-lg hover:bg-white hover:text-midnight focus:ring-4 focus:ring-white focus:ring-white hover:opacity-90">
+                    Starte dein Abenteuer
+                    <svg class="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                    </svg>
+                </a>
+            </div>
+            <div
+                class="  mt-8 lg:mt-0 relative mx-auto border-midnight dark:border-midnight bg-midnight border-[14px] rounded-[2.5rem] h-[341px] w-[454px] md:h-[512px] md:w-[682px]">
+                <div
+                    class="h-[32px] w-[3px] bg-midnight dark:bg-midnight absolute -left-[17px] top-[72px] rounded-l-lg">
+                </div>
+                <div
+                    class="h-[46px] w-[3px] bg-midnight dark:bg-midnight absolute -left-[17px] top-[124px] rounded-l-lg">
+                </div>
+                <div
+                    class="h-[46px] w-[3px] bg-midnight dark:bg-midnight absolute -left-[17px] top-[178px] rounded-l-lg">
+                </div>
+                <div
+                    class="h-[64px] w-[3px] bg-midnight dark:bg-midnight absolute -right-[17px] top-[142px] rounded-r-lg">
+                </div>
+
+                <div class="rounded-[2rem] overflow-hidden h-[313px] md:h-[484px] bg-white">
+                    <img src="https://dummyimage.com/682x502" class="dark:hidden cover h-[313px] md:h-[484px]" alt="">
+                    <img src="https://flowbite.s3.amazonaws.com/docs/device-mockups/tablet-mockup-image-dark.png"
+                        class="hidden dark:block h-[313px] md:h-[484px]" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <img class="w-screen" src="/assets/images/svg/waves-4.svg">
+</section>
+
+
+<section class="text-gray-600 body-font">
+    <div class="max-w-screen-md mb-4 mx-auto text-center">
+        <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 text-white">Verschenke persönliche
+            Geschichten</h2>
+        <p class="lg:w-2/3 mx-auto leading-relaxed text-base md:text-lg text-white">Tolle Geschenke für kleine Helden
+        </p>
+    </div>
+    <div class="container mx-auto flex items-center justify-center flex-col">
+        <div class="book-section">
+            <div class="container">
+                <div class="right">
+                    <figure class="back" id="back-cover"></figure>
+                    <figure class="front" style="background-image: url(https://picsum.photos/200/300);"></figure>
+                </div>
+                <div class="right">
+                    <figure class="back" style="background-image: url(https://picsum.photos/200/300);"></figure>
+                    <figure class="front"
+                        style="background-image: url(http://artisticdesigning.com/Drawings/Photoshopped/sunset_landscape.jpg);">
+                    </figure>
+                </div>
+                <div class="right">
+                    <figure class="back" style="background-image: url(https://picsum.photos/200/300);"></figure>
+                    <figure class="front" style="background-image: url(https://picsum.photos/200/300);"></figure>
+                </div>
+                <div class="right">
+                    <figure class="back" style="background-image: url(https://picsum.photos/200/300g);"></figure>
+                    <figure class="front" style="background-image: url(https://picsum.photos/200/300g);"></figure>
+                </div>
+                <div class="right">
+                    <figure class="back" style="background-image: url(https://picsum.photos/200/300g);"></figure>
+                    <figure class="front" style="background-image: url(https://picsum.photos/200/300);"></figure>
+                </div>
+                <div class="right">
+                    <figure class="back"
+                        style="background-image: url('http://artisticdesigning.com/Drawings/Photoshopped/narendra_modi_caricature.jpg');">
+                    </figure>
+                    <figure class="front" id="cover">
+                        <h1>Book Title</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, modi.</p>
+                    </figure>
+                </div>
+            </div>
+            <button onclick="turnLeft()">Prev</button> <button onclick="turnRight()">Next</button>
+            <br />
+        </div>
+        <div class="text-center lg:w-2/3 w-full">
+            <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">Machen Sie die Abenteuer
+                unvergesslich, indem Sie Ihr personalisiertes Buch in gedruckter Form erhalten</h1>
+            <p class="mb-8 text-white leading-relaxed">Hochwertig gedruckt und gebunden, wird jedes Buch zu einem
+                besonderen Schatz, der Ihr Kind ein Leben lang begleitet.</p>
+            <div class="flex justify-center gap-4">
+                <a href="#"
+                    class="mr-3 inline-flex items-center justify-center px-5 py-3  text-base font-medium text-center text-white rounded-lg bg-ucla_blue hover:bg-ucla_blue-600 focus:ring-4 focus:ring-ucla_blue-400 hover:opacity-90">
+                    Dein Kinderbuch erstellen
+                    <svg class="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                </a>
+                <a href="#"
+                    class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-white bg-charcoal border border-white rounded-lg hover:bg-white hover:text-midnight focus:ring-4 focus:ring-white focus:ring-white hover:opacity-90">
+                    Mehr erfahren
+                </a>
+            </div>
+        </div>
+    </div>
+    <img class="w-screen" src="/assets/images/svg/waves-3.svg">
+</section>
+
+
+<div class="bg-ucla_blue text-white pt-6 sm:pt-8 lg:pt-12">
+    <div class="mx-auto max-w-screen-lg px-4 md:px-8">
+      <!-- text - start -->
+      <div class="mb-10 md:mb-16">
+        <h2 class="mb-4 text-center text-2xl font-bold  md:mb-6 lg:text-3xl">Wähle dein Abo</h2>
+  
+        <p class="mx-auto max-w-screen-md text-center  md:text-lg">Wähle das Perfekte Lese- oder Hörerlebnis für dein Kind</p>
+      </div>
+      <!-- text - end -->
+  
+      <div class="flex flex-wrap items-center justify-center gap-4 sm:gap-0">
+        <!-- left side - start -->
+        <div class="w-full rounded-lg bg-charcoal-200 p-6 sm:w-1/2 sm:rounded-r-none sm:p-8 lg:w-1/3">
+          <div class="mb-4">
+            <h3 class="text-2xl font-semibold text-gray-100 sm:text-3xl">Standard Abo</h3>
+            <p class="text-gray-300">Ebook</p>
+          </div>
+  
+          <div class="mb-4 space-x-2">
+            <span class="text-4xl font-bold text-gray-100">€6,99</span>
+            <span class="text-2xl text-gray-300 line-through">€9.99</span>
+          </div>
+  
+          <ul class="mb-6 space-y-2 text-gray-300">
+            <!-- feat - start -->
+            <li class="flex items-center gap-1.5">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 shrink-0" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+              </svg>
+  
+              <span>Ebook</span>
+            </li>
+            <!-- feat - end -->
+  
+            <!-- feat - start -->
+            <li class="flex items-center gap-1.5">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 shrink-0" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+              </svg>
+  
+              <span>Format PDF</span>
+            </li>
+            <!-- feat - end -->
+  
+            <!-- feat - start -->
+            <li class="flex items-center gap-1.5">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 shrink-0" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+              </svg>
+  
+              <span>Zustellung via r Email</span>
+            </li>
+            <!-- feat - end -->
+          </ul>
+  
+          <a href="#" class="block rounded-lg bg-gray-500 px-8 py-3 text-center text-sm font-semibold text-gray-100 outline-none ring-indigo-300 transition duration-100 hover:bg-gray-600 focus-visible:ring active:text-gray-300 md:text-base">Jetzt Starten</a>
+        </div>
+        <!-- left side - end -->
+  
+        <!-- right side - start -->
+        <div class="w-full rounded-lg bg-gradient-to-tr from-midnight-500 to-charcoal-500 p-6 shadow-xl sm:w-1/2 sm:p-8">
+          <div class="mb-4 flex flex-col items-start justify-between gap-4 lg:flex-row">
+            <div>
+              <h3 class="text-2xl font-semibold text-white sm:text-3xl">Premium Abo</h3>
+              <p class="text-indigo-100">Ebook + Hörbuch</p>
+            </div>
+  
+            <span class="order-first inline-block rounded-full bg-indigo-200 bg-opacity-50 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-white lg:order-none">Beliebt</span>
+          </div>
+  
+          <div class="mb-4 space-x-2">
+            <span class="text-4xl font-bold text-white">€14.99</span>
+            <span class="text-2xl text-indigo-100 line-through">€9.99</span>
+          </div>
+  
+          <ul class="mb-6 space-y-2 text-indigo-100">
+            <!-- feat - start -->
+            <li class="flex items-center gap-1.5">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 shrink-0" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+              </svg>
+  
+              <span>Ebook</span>
+            </li>
+            <!-- feat - end -->
+  
+            <!-- feat - start -->
+            <li class="flex items-center gap-1.5">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 shrink-0" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+              </svg>
+  
+              <span>Formate PDF und Interaktiv</span>
+            </li>
+            <!-- feat - end -->
+  
+            <!-- feat - start -->
+            <li class="flex items-center gap-1.5">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 shrink-0" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+              </svg>
+  
+              <span> Zustellung via SMS, Whatsapp oder Email</span>
+            </li>
+            <!-- feat - end -->
+  
+            <!-- feat - start -->
+            <li class="flex items-center gap-1.5">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 shrink-0" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+              </svg>
+  
+              <span>Tonspur für jede Seite</span>
+            </li>
+            <!-- feat - end -->
+  
+            <!-- feat - start -->
+            <li class="flex items-center gap-1.5">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 shrink-0" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+              </svg>
+  
+              <span>Erhalte eine neue Geschichte wenn sie dir nicht gefällt</span>
+            </li>
+            <!-- feat - end -->
+          </ul>
+  
+          <a href="#" class="block rounded-lg bg-indigo-200 bg-opacity-50 px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-indigo-300 transition duration-100 hover:bg-indigo-300 focus-visible:ring active:bg-indigo-400 md:text-base">Jetzt Starten</a>
+        </div>
+        <!-- right side - end -->
+      </div>
+    </div>
+
+
+      <img class="w-screen" src="/assets/images/svg/waves-5.svg">
+  </div>
+
+
+  <footer class="bg-midnight pt-4 sm:pt-6 lg:pt-8">
+    <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
+      <div class="flex flex-col items-center justify-between gap-2 border-b border-t border-midnight-800 py-6 md:flex-row">
+        <div class="mb-3 text-center md:mb-0 md:text-left">
+          <span class="font-bold uppercase tracking-widest text-white">Bleibe Up To Date</span>
+          <p class="text-midnight-800">Melde dich für unseren Newsletter an</p>
+        </div>
+  
+        <form class="flex w-full gap-2 md:max-w-md">
+          <input placeholder="Email" class="bg-charcoal w-full flex-1 rounded border border-midnight-800 px-3 py-2 text-white placeholder-gray-400 outline-none ring-indigo-300 transition duration-100 focus:ring" />
+  
+          <button class="mr-3 inline-flex items-center justify-center px-5 py-3  text-base font-medium text-center text-white rounded-lg bg-ucla_blue hover:bg-ucla_blue-600 focus:ring-4 focus:ring-ucla_blue-400 hover:opacity-90">Send</button>
+        </form>
+      </div>
+    </div>
+  
+    <div class="pt-12">
+      <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
+        <div class="mb-16 grid grid-cols-2 gap-12 md:grid-cols-4 lg:grid-cols-6 lg:gap-8">
+          <div class="col-span-full lg:col-span-2">
+            <!-- logo - start -->
+            <div class="mb-4 lg:-mt-2">
+              <a href="/" class="inline-flex items-center gap-2 text-xl font-bold text-white md:text-2xl" aria-label="logo">
+                <svg width="95" height="94" viewBox="0 0 95 94" class="h-auto w-5 text-indigo-500" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M96 0V47L48 94H0V47L48 0H96Z" />
+                </svg>
+  
+                Neotales
+              </a>
+            </div>
+            <!-- logo - end -->
+  
+            <p class="mb-6 text-midnight-800 sm:pr-8">Filler text is dummy text which has no meaning however looks very similar to real text</p>
+  
+            <!-- social - start -->
+            <div class="flex gap-4">
+              <a href="#" target="_blank" class="text-midnight-800 transition duration-100 hover:text-white active:text-gray-600">
+                <svg class="h-5 w-5" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                </svg>
+              </a>
+  
+              <a href="#" target="_blank" class="text-midnight-800 transition duration-100 hover:text-white active:text-gray-600">
+                <svg class="h-5 w-5" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
+                </svg>
+              </a>
+  
+              <a href="#" target="_blank" class="text-midnight-800 transition duration-100 hover:text-white active:text-gray-600">
+                <svg class="h-5 w-5" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                </svg>
+              </a>
+  
+              <a href="#" target="_blank" class="text-midnight-800 transition duration-100 hover:text-white active:text-gray-600">
+                <svg class="h-5 w-5" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                </svg>
+              </a>
+            </div>
+            <!-- social - end -->
+          </div>
+  
+          <!-- nav - start -->
+          <div>
+            <div class="mb-4 font-bold uppercase tracking-widest text-white">Produkte</div>
+  
+            <nav class="flex flex-col gap-4">
+              <div>
+                <a href="#" class="text-midnight-800 transition duration-100 hover:text-indigo-500 active:text-indigo-600">Übersicht</a>
+              </div>
+  
+              <div>
+                <a href="#" class="text-midnight-800 transition duration-100 hover:text-indigo-500 active:text-indigo-600">Gutenacht Abo</a>
+              </div>
+  
+              <div>
+                <a href="#" class="text-midnight-800 transition duration-100 hover:text-indigo-500 active:text-indigo-600">Individuelle Bücher</a>
+              </div>
+  
+              <div>
+                <a href="#" class="text-midnight-800 transition duration-100 hover:text-indigo-500 active:text-indigo-600">Preise</a>
+              </div>
+            </nav>
+          </div>
+          <!-- nav - end -->
+  
+          <!-- nav - start -->
+          <div>
+            <div class="mb-4 font-bold uppercase tracking-widest text-white">Firma</div>
+  
+            <nav class="flex flex-col gap-4">
+              <div>
+                <a href="#" class="text-midnight-800 transition duration-100 hover:text-indigo-500 active:text-indigo-600">Über Uns</a>
+              </div>
+  
+              <div>
+                <a href="#" class="text-midnight-800 transition duration-100 hover:text-indigo-500 active:text-indigo-600">Presse</a>
+              </div>
+  
+              <div>
+                <a href="#" class="text-midnight-800 transition duration-100 hover:text-indigo-500 active:text-indigo-600">Jobs</a>
+              </div>
+  
+              <div>
+                <a href="#" class="text-midnight-800 transition duration-100 hover:text-indigo-500 active:text-indigo-600">Blog</a>
+              </div>
+            </nav>
+          </div>
+          <!-- nav - end -->
+  
+          <!-- nav - start -->
+          <div>
+            <div class="mb-4 font-bold uppercase tracking-widest text-white">Support</div>
+  
+            <nav class="flex flex-col gap-4">
+              <div>
+                <a href="#" class="text-midnight-800 transition duration-100 hover:text-indigo-500 active:text-indigo-600">Kontakt</a>
+              </div>
+  
+              <div>
+                <a href="#" class="text-midnight-800 transition duration-100 hover:text-indigo-500 active:text-indigo-600">Chat</a>
+              </div>
+  
+              <div>
+                <a href="#" class="text-midnight-800 transition duration-100 hover:text-indigo-500 active:text-indigo-600">FAQ</a>
+              </div>
+            </nav>
+          </div>
+          <!-- nav - end -->
+  
+          <!-- nav - start -->
+          <div>
+            <div class="mb-4 font-bold uppercase tracking-widest text-white">Legal</div>
+  
+            <nav class="flex flex-col gap-4">
+              <div>
+                <a href="#" class="text-midnight-800 transition duration-100 hover:text-indigo-500 active:text-indigo-600">Terms of Service</a>
+              </div>
+  
+              <div>
+                <a href="#" class="text-midnight-800 transition duration-100 hover:text-indigo-500 active:text-indigo-600">Privacy Policy</a>
+              </div>
+  
+              <div>
+                <a href="#" class="text-midnight-800 transition duration-100 hover:text-indigo-500 active:text-indigo-600">Cookie settings</a>
+              </div>
+            </nav>
+          </div>
+          <!-- nav - end -->
+        </div>
+  
+        <div class="border-t border-midnight-800 py-8 text-center text-sm text-midnight-800">© 2023 Neotales. All rights reserved.</div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+<script src="https://unpkg.com/@rive-app/canvas@2.1.0"></script>
+<script>
+
+
+    const r = new rive.Rive({
+        src: "chat_demo.riv",
+        canvas: document.getElementById("canvas"),
+        animations: ['Timeline 1'],
+        autoplay: true,
+        stateMachines: "bumpy",
+        onError: () => {
+            console.log("rive ohje");
+        },
+        onLoad: () => {
+            console.log("rive loaded");
+            r.resizeDrawingSurfaceToCanvas();
+        },
+    });
+
+
+</script>
+
+
+<!--
+    Erstelle eine Landing PAge für Neotale, Einer Software die es ermöglicht KI gestützte Kinderbücher und Gutenachtgeschichten zu schreiben. 
+
+AI generuierte eBooks: Lass deine Kleinen die helden in ihrer Gute Nacht Geschichte werden. Taucht in neue spannende Abenteuer ein und lasst euch von neuen Welten verzaubern. 
+Die beBooks gibt es ab 2.49€ oder perfekt als Geschenk auch im Hardcover druck ab 19,99€
+
+Bedtime subscription: Erhalte jeden abend eine Individuelle Kurzgeschichte in der deine Kids die Rollen der Helden einnehmen. Entführe sie jeden Abend in eien neue atemberaubende Welt. 
+
+Wundervolle Illustrationen die mithilfe von KI optisch an die Eigenschaften deiner Kinder angepasst werden.
+
+Das Buch kann von dir nochmal komplett überarbeitet werden.  Du kannst die Texte selbst editieren und auch Bilder neu erstellen lassen. 
+
+Altersgerecht: Wir berücksichtigen das Alter deines Kindes und achten darauf, dass die Geschichte zu deinen Liebsten passt. 
+
+Lass die geschichte vorlesen: wenn du mal wieder zu vioel um die Ohren hast, müssen deine Kinder nicht auf Ihre Gesxchichte verzichten. du kannst für deine Kurzgeschichte einfach die Audiospur dazu buchen und die Kinder kommen somit dennoch Abends auf Ihre Kosten
+
+Hebe folgende Eigenschaften besonders hervor: 
+Wir berücksichtigen die Interessen deiner Kinder. Schließe bestimmte Themen komplett aus und Favourisiere Dinge die dein Kind spannend findet. 
+
+Unsere Geschichten sollen einfach zu lesen sein, sodass dein Kind beim lesen lernen unterstützt wird. Außerdem versuchen wir in unseren Gecshichten immer auch etwas lehrreiches spannend zu verpacken. 
+
+ChatGPT
+Willkommen bei Neotale – Wo Träume lebendig werden!
+AI-generierte eBooks für deine Kleinen
+
+Tauche mit Neotale in die faszinierende Welt der KI-generierten Kinderbücher und Gutenachtgeschichten ein. Deine Kinder können die Helden ihrer eigenen Geschichten sein und in aufregende Abenteuer eintauchen. Unsere beBooks sind ab nur 2,49€ erhältlich oder als Hardcover-Geschenk ab 19,99€.
+Bedtime Subscription
+
+Erhalte jeden Abend eine individuelle Kurzgeschichte, in der deine Kinder die Hauptrollen spielen. Entführe sie in atemberaubende Welten und erlebe magische Momente vor dem Schlafengehen.
+Wundervolle Illustrationen
+
+Unsere Geschichten werden mithilfe von KI optisch an die Eigenschaften deiner Kinder angepasst. Jedes Buch ist ein visuelles Meisterwerk, das die Fantasie deiner Kleinen zum Leben erweckt.
+Leicht anpassbar
+
+Du kannst die Bücher von Neotale komplett überarbeiten. Editiere Texte nach deinen Wünschen und lasse sogar neue Bilder erstellen – für ein personalisiertes Leseerlebnis.
+Altersgerecht und lehrreich
+
+Wir berücksichtigen das Alter deines Kindes und sorgen dafür, dass die Geschichten perfekt zu ihren Interessen passen. Unsere Bücher unterstützen nicht nur das Lesenlernen, sondern verpacken auch lehrreiche Elemente in spannende Abenteuer.
+Vorlesen leicht gemacht
+
+In hektischen Zeiten bleibt die Gute-Nacht-Geschichte erhalten. Buche einfach die Audiospur dazu, und schon können die Kinder die Geschichten auch hören, wenn du mal zu viel um die Ohren hast.
+Individuelle Interessen
+
+Neotale hebt sich ab, indem wir die Interessen deiner Kinder berücksichtigen. Schließe ungewünschte Themen aus und betone die Dinge, die dein Kind besonders faszinierend findet.
+Leseerlebnis und Lernunterstützung
+
+Unsere Geschichten sind einfach zu lesen und fördern das Lesenlernen. Gleichzeitig verpacken wir lehrreiche Elemente auf unterhaltsame Weise, damit jedes Buch zu einem Abenteuer der Bildung wird.
+
+Entdecke mit Neotale eine neue Dimension des Lesens für deine Kinder – Wo Geschichten nicht nur erzählt, sondern auch gelebt werden!
+User
+Verpacke alle informationen und Texte in einzelne sektionen wie Fetures, Angebot, pricing etc. 
+ChatGPT
+Willkommen bei Neotale – Wo Träume lebendig werden!
+Features:
+
+AI-generierte eBooks für deine Kleinen:
+Tauche mit Neotale in die faszinierende Welt der KI-generierten Kinderbücher und Gutenachtgeschichten ein. Deine Kinder können die Helden ihrer eigenen Geschichten sein und in aufregende Abenteuer eintauchen.
+
+Wundervolle Illustrationen:
+Unsere Geschichten werden mithilfe von KI optisch an die Eigenschaften deiner Kinder angepasst. Jedes Buch ist ein visuelles Meisterwerk, das die Fantasie deiner Kleinen zum Leben erweckt.
+
+Leicht anpassbar:
+Du kannst die Bücher von Neotale komplett überarbeiten. Editiere Texte nach deinen Wünschen und lasse sogar neue Bilder erstellen – für ein personalisiertes Leseerlebnis.
+
+Altersgerecht und lehrreich:
+Wir berücksichtigen das Alter deines Kindes und sorgen dafür, dass die Geschichten perfekt zu ihren Interessen passen. Unsere Bücher unterstützen nicht nur das Lesenlernen, sondern verpacken auch lehrreiche Elemente in spannende Abenteuer.
+
+Vorlesen leicht gemacht:
+In hektischen Zeiten bleibt die Gute-Nacht-Geschichte erhalten. Buche einfach die Audiospur dazu, und schon können die Kinder die Geschichten auch hören, wenn du mal zu viel um die Ohren hast.
+
+Individuelle Interessen:
+Neotale hebt sich ab, indem wir die Interessen deiner Kinder berücksichtigen. Schließe ungewünschte Themen aus und betone die Dinge, die dein Kind besonders faszinierend findet.
+
+Leseerlebnis und Lernunterstützung:
+Unsere Geschichten sind einfach zu lesen und fördern das Lesenlernen. Gleichzeitig verpacken wir lehrreiche Elemente auf unterhaltsame Weise, damit jedes Buch zu einem Abenteuer der Bildung wird.
+Angebot:
+
+Bedtime Subscription:
+Erhalte jeden Abend eine individuelle Kurzgeschichte, in der deine Kinder die Hauptrollen spielen. Entführe sie in atemberaubende Welten und erlebe magische Momente vor dem Schlafengehen.
+
+Editierbare Inhalte:
+Du kannst die Texte selbst editieren und sogar Bilder neu erstellen lassen. Das Buch wird somit zu einer einzigartigen Schöpfung, die genau auf die Vorlieben deiner Kinder zugeschnitten ist.
+Pricing:
+
+AI-generierte eBooks:
+Ab 2,49€ pro Buch oder im Hardcover-Format ab 19,99€ – Die Magie von Neotale zu erschwinglichen Preisen.
+Entdecke mit Neotale eine neue Dimension des Lesens für deine Kinder – Wo Geschichten nicht nur erzählt, sondern auch gelebt werden!
+-->
